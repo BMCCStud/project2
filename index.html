@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Landmarks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>NYC Landmarks Virtual Tour</h1>
+        <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
+        <p>New York City is filled with landmarks, tourist attractions and historic sites dating from before it was
+            known as New York City to more recent additions. Click through this site to explore!</p>
+
+        <div class="videoWrapper ratio-16-9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_xkg7pNSp9M?si=a0eDzxNdR_HCoJfU"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h1 class="highlight-heading">Featured Landmarks</h1>
+        <h2>The Wonder Wheel</h2>
+        <figcaption>
+    <p>The Wonder Wheel is the iconic ferris wheel at Deno’s Wonder Wheel Amusement Park in Coney Island, Brooklyn. Standing 150 feet tall, it has been a centerpiece of the boardwalk skyline since its debut in 1920.</p>
+
+    <p>Coney Island has been a hub of seaside amusement for more than a century, known for its thrilling rides, bright lights, and summertime energy. From the historic Cyclone roller coaster to modern attractions, it remains one of New York City’s most beloved destinations for fun by the beach.</p>
+  </figcaption>
+        <!-- Featured image using <picture> -->
+        <picture>
+            <!-- Large screens (desktop/tablet) -->
+            <source media="(min-width: 645px)" srcset="images\pexels-kelsey-caroline-774981359-19122990.jpg">
+
+            <!-- Small screens (mobile) -->
+            <source media="(max-width: 644px)" srcset="images\pexels-kelsey-caroline-774981359-19122990 800.jpg">
+
+            <!-- Fallback image -->
+            <img src="images\pexels-kelsey-caroline-774981359-19122990.jpg"
+                alt="Wonder Wheel ferris wheel at Coney Island">
+        </picture>
+        <div class="landmarks">
+            <h1 class="highlight-heading">Other New York Landmarks</h1>
+            <h3>The Statue of Liberty</h3>
+            <figure>
+                <p>The Statue of Liberty, a gift from France in 1886, stands on Liberty Island in New York Harbor. It is a symbol of freedom, democracy, and hope, welcoming millions of immigrants arriving in the United States.</p>
+                <img src="images\pexels-mora-versio-2150673251-34091093 800.jpg" alt="Statue of Liberty">
+                <figcaption>
+                    <a href="https://www.pexels.com/photo/statue-of-liberty-in-new-york-city-usa-34091093/"   target="_blank" class="photo-link"> Photo by
+                        Mora Versio</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <h3>The Empire State Building</h3>
+                <p>The Empire State Building, completed in 1931, is one of New York City's most iconic skyscrapers. Standing 1,454 feet tall including its antenna, it offers breathtaking views of the city from its observation decks.</p>
+                <img src="images\pexels-tracehudson-2424391 800.jpg"
+                    alt="Empire State Building with lower Manhattan in the background">
+                <figcaption>
+                    <a href="https://www.pexels.com/photo/empire-state-building-2424391/" target="_blank" class="photo-link">Photo by Trace Hudson</a>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <h3>Yankee Stadium</h3>
+                <p>Yankee Stadium, located in the Bronx, is the home of the New York Yankees baseball team. Opened in 2009, it replaced the original stadium and is a modern sports venue hosting baseball games, concerts, and other major events.</p>
+                <img src="images\pexels-malcolmhill-12360516 800.jpg" alt="Yankee Stadium">
+                <figcaption>
+                    <a href="https://www.pexels.com/photo/yankee-stadium-under-the-blue-sky-12360516/" target="_blank" class="photo-link">Photo by Malcolm
+                        Hill</a>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <h3>The Staten Island Ferry</h3>
+                <p>The Staten Island Ferry provides free daily service between Manhattan and Staten Island. Offering stunning views of the Statue of Liberty and New York Harbor, it is both a commuter lifeline and a popular tourist experience.</p>
+                <img src="images\praswin-prakashan-YOCN1a1m_dg-unsplash 800.jpg"
+                    alt="Staten Island Ferry pulling into the dock">
+                <figcaption>
+                    <a href="https://unsplash.com/photos/a-large-ferry-boat-in-a-body-of-water-YOCN1a1m_dg" target="_blank" class="photo-link">Photo by
+                        Praswin Prakashan</a>
+                </figcaption>
+            </figure>
+
+            <figure>
+                    <h3>The Roosevelt Island Tramway</h3>
+                <p>The Roosevelt Island Tramway is an aerial tram in New York City connecting Manhattan to Roosevelt Island. Opened in 1976, it offers unique views of the East River and the city skyline, making it both a practical commute and a tourist attraction.</p>
+                <img src="images\pexels-loquellano-12404963 800.jpg" alt="Roosevelt Island Tramway leaving Manhattan">
+                <figcaption>
+                    <a href="https://www.pexels.com/photo/cable-car-above-city-street-12404963/" target="_blank" class="photo-link" >Photo by Raphael
+                        Loquellano</a>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site Marta S</p>
+    </footer>
+</body>
+
+</html>

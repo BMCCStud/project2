@@ -4,3 +4,129 @@ img, video{
   max-width: 100%;
   height: auto;
 }
+.landmarks-grid{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+figure{ margin:0;}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* пропорція 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+figure {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* тінь */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+figcaption {
+  margin-top: 16px;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+body {
+  background-color: #cfeffbc9; /* світло-сірий */
+}
+
+h1 {
+  font-family: 'Playfair Display', serif; /* елегантний шрифт */
+  font-size: 4rem;       /* великий розмір */
+  font-weight: 900;      /* жирний */
+  text-align: center;    /* по центру сторінки */
+  color: #2c3e50;        /* темно-синій/сірий */
+  margin: 40px 0;        /* відступи зверху і знизу */
+  letter-spacing: 1px;   /* відстань між літерами */ 
+ border: 4px solid #2c3e50;
+padding: 20px 40px;  
+  border-radius: 12px; 
+
+/* Градієнтна рамка */
+  padding: 20px 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #84b8db, #9fc1d4); /* градієнт від помаранчевого до світло-рожевого */
+}
+
+
+.intro {
+  font-family: 'Playfair Display', sans-serif; /* сучасний, легкий для читання шрифт */
+  font-size: 1.4rem;                 /* трохи більший текст для вступу */
+  font-weight: 700;                   /* напівжирний для акценту */
+  text-align: center;                 /* по центру */
+  margin: 20px auto;                  /* відступи зверху і знизу */
+  color: #2c3e50;                        /* темно-сірий текст */
+  max-width: 800px;                   /* обмежена ширина для легкого читання */
+  line-height: 1.6;                   /* комфортний міжрядковий інтервал */
+}
+
+p:not(.intro) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+h2 {
+  font-family: 'Playfair Display', serif; /* стильний шрифт */
+  font-size: 2.5rem;     /* трохи менший, ніж h1 */
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  margin: 30px auto;
+  letter-spacing: 1px;}
+
+  h3{font-family: 'Playfair Display', serif; /* стильний шрифт */
+  font-size: 2.5rem;     /* трохи менший, ніж h1 */
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50;
+  margin: 30px auto;
+  letter-spacing: 1px; }
+
+.photo-link {
+  text-decoration: none;      /* прибирає підкреслення */
+  color: #555;                /* колір посилання */
+  transition: color 0.3s ease;
+}
+
+.photo-link:hover {
+  color: #ff7e5f;             /* колір при наведенні */
+  text-decoration: underline;  /* можна додати підкреслення при наведенні */
+}
+.highlight-heading {
+  font-family: 'Playfair Display', serif;  /* той самий шрифт, що h1 */
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.highlight-heading:hover {
+  color: #ff7e5f;  /* колір підсвічування */
+  text-shadow: 0 0 10px rgba(255,126,95,0.7), 0 0 20px rgba(255,126,95,0.5);
+  cursor: default;
+}
